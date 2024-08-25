@@ -20,9 +20,9 @@ app.post('/bfhl', (req, res) => {
     const alphabets = data.filter(item => isNaN(item));
     const highestLowercaseAlphabet = getHighestLowercaseAlphabet(alphabets);
 
-    const user_id = "john_doe_17091999";
-    const email = "john@xyz.com";
-    const roll_number = "ABCD123";
+    const user_id = "hariharan_s_01082003";
+    const email = "hariharan.s2021@vitstudent.ac.in";
+    const roll_number = "21BIT0224";
 
     const response = {
         is_success: true,
