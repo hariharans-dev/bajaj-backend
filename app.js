@@ -1,6 +1,9 @@
 const express = require('express');
+const cors = require('cors');  // Import cors
+
 const app = express();
 
+app.use(cors());  // Use cors
 app.use(express.json());
 
 function getHighestLowercaseAlphabet(alphabets) {
