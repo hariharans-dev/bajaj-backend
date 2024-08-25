@@ -1,10 +1,14 @@
 const express = require('express');
-const cors = require('cors');  // Import cors
+const cors = require('cors'); 
 
 const app = express();
 
 app.use(cors());  // Use cors
 app.use(express.json());
+app.use(cors({
+    origin: 'http://65.2.129.47:3000/' 
+}));
+
 
 function getHighestLowercaseAlphabet(alphabets) {
     const lowercaseAlphabets = alphabets.filter(char => char >= 'a' && char <= 'z');
