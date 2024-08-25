@@ -9,7 +9,7 @@ function getHighestLowercaseAlphabet(alphabets) {
     return [lowercaseAlphabets.sort().pop()];
 }
 
-app.post('/bfhl)', (req, res) => {
+app.post('/bfhl', (req, res) => {
     const { data } = req.body;
 
     if (!Array.isArray(data)) {
@@ -37,7 +37,7 @@ app.post('/bfhl)', (req, res) => {
     res.status(200).json(response);
 });
 
-app.get('/bfhl)', (req, res) => {
+app.get('/bfhl', (req, res) => {
     const response = {
         operation_code: 1
     };
